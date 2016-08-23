@@ -26,17 +26,26 @@ class CreateAccountViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func sendSMS(sender: UIButton) {
+        let components = NSURLComponents(string: "/api/account/send_sms")!
+        let phoneQuery = URLQueryItem(name: "phone", value: "100")
+        components.queryItems = [phoneQuery]
+        let request = URLRequest(url: components.url(relativeTo: Constants.host)!)
+        let task = URLSession.shared.dataTask(with: request) {
+            (data, response, error) -> Void in
+            if (error != nil) {
+                print(error)
+                return
+            }
+            let httpResponse = response as! HTTPURLResponse
+            let statusCode = httpResponse.statusCode
+            if (statusCode != 200) {
+                print("HTTP ERR: \(statusCode)")
+                return
+            }
+            print(data)
+        }
+        task.resume()
+        //delegate!.accountCreated()
     }
-    */
-  @IBAction func sendSMS(sender: UIButton) {
-    delegate!.accountCreated()
-  }
 }

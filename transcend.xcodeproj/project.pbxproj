@@ -11,6 +11,7 @@
 		E604C2D11D6BCC5C00DAAD85 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E604C2D01D6BCC5C00DAAD85 /* CreateAccountViewController.swift */; };
 		E604C2D31D6BCC8E00DAAD85 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E604C2D21D6BCC8E00DAAD85 /* NavigationViewController.swift */; };
 		E604C2D61D6BD1BA00DAAD85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E604C2D41D6BD1BA00DAAD85 /* Main.storyboard */; };
+		E6BA56E71D6BF54800ACE9D5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BA56E61D6BF54800ACE9D5 /* Constants.swift */; };
 		E6CB9EB31D6BB2AB007438EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CB9EB21D6BB2AB007438EC /* AppDelegate.swift */; };
 		E6CB9EBE1D6BB2AB007438EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6CB9EBD1D6BB2AB007438EC /* Assets.xcassets */; };
 		E6CB9EC11D6BB2AB007438EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6CB9EBF1D6BB2AB007438EC /* LaunchScreen.storyboard */; };
@@ -21,6 +22,7 @@
 		E604C2D01D6BCC5C00DAAD85 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		E604C2D21D6BCC8E00DAAD85 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		E604C2D51D6BD1BA00DAAD85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E6BA56E61D6BF54800ACE9D5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E6CB9EAF1D6BB2AB007438EC /* transcend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = transcend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CB9EB21D6BB2AB007438EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6CB9EBD1D6BB2AB007438EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				E6CB9EC21D6BB2AB007438EC /* Info.plist */,
 				E604C2D01D6BCC5C00DAAD85 /* CreateAccountViewController.swift */,
 				E604C2D21D6BCC8E00DAAD85 /* NavigationViewController.swift */,
+				E6BA56E61D6BF54800ACE9D5 /* Constants.swift */,
 			);
 			path = transcend;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6BA56E71D6BF54800ACE9D5 /* Constants.swift in Sources */,
 				E604C2D31D6BCC8E00DAAD85 /* NavigationViewController.swift in Sources */,
 				E604C2D11D6BCC5C00DAAD85 /* CreateAccountViewController.swift in Sources */,
 				E604C2CF1D6BB52D00DAAD85 /* CalendarViewController.swift in Sources */,
