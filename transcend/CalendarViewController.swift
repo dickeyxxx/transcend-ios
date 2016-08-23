@@ -12,7 +12,16 @@ class CalendarViewController: UITableViewController, CreateAccountDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.performSegue(withIdentifier: "CreateAccount", sender: self)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if (true) {
+            DispatchQueue.main.async { () -> Void in
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CreateAccount") as! CreateAccountViewController
+                vc.delegate = self
+                self.present(vc, animated: false)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

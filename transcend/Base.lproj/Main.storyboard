@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Create Account View Controller-->
+        <!--Create Account-->
         <scene sceneID="BGq-Fe-ijN">
             <objects>
-                <viewController id="c97-ly-E2k" customClass="CreateAccountViewController" customModule="transcend" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateAccount" title="Create Account" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c97-ly-E2k" customClass="CreateAccountViewController" customModule="transcend" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zjh-oe-Cc3"/>
                         <viewControllerLayoutGuide type="bottom" id="fwW-2a-KnF"/>
@@ -19,20 +19,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feB-g0-kv7">
-                                <frame key="frameInset" minX="135" minY="428" width="71" height="30"/>
+                                <frame key="frameInset" minX="152" minY="373" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Send SMS"/>
                                 <connections>
-                                    <action selector="sendSMSWithSender:" destination="c97-ly-E2k" eventType="touchUpInside" id="dz2-ho-3SM"/>
+                                    <action selector="sendSMSWithSender:" destination="c97-ly-E2k" eventType="touchUpInside" id="lo5-o3-Dve"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RM7-He-DBH">
-                                <frame key="frameInset" minX="122" minY="390" width="97" height="30"/>
+                                <frame key="frameInset" minX="57" minY="318" width="260" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gx8-qd-jqH">
+                                <frame key="frameInset" minX="93" minY="72" width="189" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -40,7 +47,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="68k-Fn-Xj9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-242" y="719"/>
+            <point key="canvasLocation" x="-276" y="690"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="dxl-M3-vJ1">
@@ -55,7 +62,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9DC-MW-0ag" id="6QR-9Z-4G8">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -66,13 +73,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="h7L-Uf-vh4"/>
-                    <connections>
-                        <segue destination="c97-ly-E2k" kind="presentation" identifier="CreateAccount" id="O89-KU-85h"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rkR-HP-s7L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-970" y="720"/>
+            <point key="canvasLocation" x="-970" y="690"/>
         </scene>
         <!--Navigation View Controller-->
         <scene sceneID="Jqm-9L-9x5">
